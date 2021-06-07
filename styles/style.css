@@ -155,4 +155,9 @@ body.single-entry main {
 .double-column journal-entry {
   width: 100%;
 }
+
+.green-back {
+  background-color:green
+}
+
 /* Feature Flag End - Double Column */

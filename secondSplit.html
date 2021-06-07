@@ -26,13 +26,15 @@
     var client = factory.client();
 
     client.on(client.Event.SDK_READY, function() {
-      var treatment = client.getTreatment("Double_Column_Layout");
+      var treatment = client.getTreatment("Green_Text");
       if (treatment === "on") {
         console.log("on");
-        document.querySelector('main').classList.add("double-column");
+        document.querySelector('main').classList.add("green-back");
+        document.querySelector('header').classList.add("green-back")
       } else if (treatment === "off") {
         console.log('off');
-        document.querySelector('main').classList.remove("double-column");
+        document.querySelector('main').classList.remove("green-back");
+        document.querySelector('header').classList.remove("green-back")
       } else {}
     });
   </script>
